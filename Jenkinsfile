@@ -1,9 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Message') {
+    stage('') {
       steps {
-        echo 'Hello Jenkins'
+        powershell 'cd C:\\Users\\AbdessalamMouttaki\\Desktop\\POE_M2i_SE23-200140\\Selenium_Webdriver'
+        powershell 'pytest test_Authentication.py'
+      }
+    }
+
+    stage('Ok') {
+      steps {
+        echo 'Tout est Ok'
       }
     }
 
