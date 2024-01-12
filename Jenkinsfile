@@ -9,7 +9,7 @@ pipeline {
 
     stage('Ok') {
       steps {
-        echo 'Tout est Ok'
+        echo 'Tout est Ok modifié'
       }
     }
 
